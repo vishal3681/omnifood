@@ -1,0 +1,511 @@
+/*color #b4680f*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color: #343434;
+    font-family: 'Lato','Arial','Sans-serif';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Resource/css/img/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1,h2,h3 {  
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+h1{
+    letter-spacing: 1px;
+    margin-top: 0;
+    word-spacing: 4px;
+    font-size: 240%;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+h2{
+   letter-spacing: 1px;
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3{
+    font-size: 110%;
+    margin: 10px 0;
+}
+
+h2:after {
+    display: block;
+    background-color: #b4680f;
+    height: 2px;
+    content: " ";
+    width:400px;
+    margin: auto;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1140px;
+/*    background-size: cover;*/
+    transform: translate(-50%,-50%);
+}
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 200px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;    
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{  
+    background-color: #b4680f;
+    color: #fff;
+    border: 1px solid #b4680f;
+    margin-right: 15px;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+    border: 1px solid #b4680f;
+    color: #b4680f;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+        background-color: #844a06;
+}
+
+.btn-full:hover,
+.btn-full:active{
+     border: 1px solid #844a06;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+    border: 1px solid #844a06;
+    color: #fff;
+       background-color: #844a06;
+/*        color: #fff;*/
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+}
+.logo-black{
+    display:none;
+    width: 50px;
+    height: auto;
+    float: left;
+    margin: 5px 0;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+    color: #b4680f;
+    border-bottom: 1px solid #b4680f;
+}
+
+a:hover,
+a:active{
+    color: #343434;
+    border-bottom: 1px solid transparent;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+    
+}
+
+.main-nav li {
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.mani-nav li a:active {
+    border-bottom: 2px solid #b4680f;   
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 1px #f0ecec;
+    z-index: 9999;
+}
+
+.sticky .main-nav{
+        margin-top:15px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 20px 0;
+    color: #343434;
+}
+
+.sticky .logo{  display:none;}
+.sticky .logo-black{ display: block;}
+
+section {
+    padding: 80px 0;   
+}
+
+.feature-text{
+    width: 70%;
+    margin-left: 15%;
+    line-height: 145%;
+    margin-bottom: 20px;
+}
+
+.box {
+    padding: 1%;
+}
+
+.box p{    
+    font-size: 90%;
+    line-height: 145%;
+    text-align: justify;
+}
+
+.big-icons{
+    font-size: 300%;
+    color: #b4680f;
+}
+
+.section-meals{
+    padding: 0;
+}
+
+.meal-images{
+    list-style: none;
+    width: 100;
+}
+
+.meal-images li{
+    width: 25%;
+    display: inline-block;
+    float: left;
+}
+
+.meal-photos {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photos img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+    opacity: .7;
+}
+
+.meal-photos img:hover {
+    transform: scale(1.04);
+    opacity: 1;
+}
+
+.iphone-image{
+    width: 40%;    
+}
+
+.step-box:first-child {
+    text-align: right;
+    margin-top: 30px;
+    padding: 3%;
+}
+
+.step-box:last-child {
+    padding: 3%;
+    margin-top: 50px;
+}
+
+.section-works {
+    background-color: #ddd8d8;
+}
+
+.work-steps{
+    margin-bottom: 40px;
+}
+
+.work-steps div {
+    color: #b4680f;
+    border: 1px solid #b4680f;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 130%;
+    padding: 1%;
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+}
+
+.work-steps:last-of-type {
+    margin-bottom: 60px;
+}
+
+.download-image{
+    height: 50px;
+    margin-right: 15px;
+}
+
+.clearfix {zoom:1}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.city-box img{
+    width: 100%;
+    height: auto;
+}
+
+.small-icons{
+    color: #b4680f;
+    font-size: 130%;
+    vertical-align: middle;
+}
+
+.city-features{
+    margin-bottom: 10px;
+}
+
+.section-testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Resource/css/img/back-customers.jpg);
+    background-size: cover;
+    color: #fff; 
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 3%;
+    font-style: italic;
+    line-height: 145%;
+    margin-top: 30px;
+    position: relative;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top:-5px;
+    left: -5px;
+    
+}
+cite{
+    display: block;
+    margin-top: 15px;
+    font-size: 90%;
+}
+
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.section-plans{
+    background-color: #ddd8d8;
+    
+}
+.plan-box{
+    background-color: #fff;
+    width: 90%;
+    margin-left: 5%;
+    border-right: 5px;
+    box-shadow: 0px 2px 2px #555;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e6e1e1;
+    
+}
+
+.plan-price{
+    font-size: 300%;
+    color: #b4680f;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    margin-bottom: 10px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border-bottom: 0;
+}
+
+.plan-box div:first-child{
+    background-color: #f2f1f1;
+}
+
+.section-forms {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #dbdbdb;
+}
+
+*:focus {outline: none}
+
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox]
+{
+    margin-right: 10px;
+}
+footer{
+    background-color: #5a5959;
+    padding: 45px;
+}
+.footer-navs{
+    list-style: none;
+    float: left;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.footer-navs li,
+.social-links li{
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.footer-navs li a:link,
+.footer-navs li a:visited,
+.social-links li a:link,
+.socia-links li a:visited{
+    border: 0;
+    color: #acacac;
+}
+
+.footer-navs li a:hover,
+.footer-navs li a:active{
+    color: #e0e0e0;
+    
+}
+
+footer p{
+    text-align: center;
+    color: #acacac;
+    margin-top: 20px;
+}
+
+.social-links li a i{
+    font-size: 35px;
+}
+
+.ion-social-facebook:hover{
+    color: #3b5998;
+}
+
+.ion-social-googleplus:hover{
+    color: #dd4b39;
+}
+
+.ion-social-twitter:hover{
+    color: #55acee;
+}
+
+.ion-social-instagram:hover{
+    color: #e95950;
+}
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3{
+    opacity: 0;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated{
+    opacity 1;
+}
